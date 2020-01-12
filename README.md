@@ -1,4 +1,4 @@
-# express-with-facebook
+# passport js, express-with-facebook auth and local strategy
 
 Add your 
 
