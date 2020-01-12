@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div class="container">
+        <a href="/facebook" class="fb-login social-login">
+            Login with Facebook
+        </a>
+
+        <%- include('partials/msg.ejs'); %>
+
+        <p class="seperator">-OR-</p>
+        <form autocomplete="off" action="/users/login" method="POST">
+            <div class="group">
+                <label for="email">Email:</label>
+                <input value="<%= typeof email !='undefined' ? email: '' %>" type="text" id="email" name="email" />
+            </div>
+            <div class="group">
+                <label for="password">Password:</label>
+                <input value="<%= typeof password !='undefined' ? password: '' %>" type="password" id="password"
+                    name="password" />
+            </div>
+            <a href="/users/register" class="forget-link">Register</a>
+            <input type="submit" value="Login" id="submit">
+        </form>
+    </div>
+</div>

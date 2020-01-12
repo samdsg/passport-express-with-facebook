@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Hello, <%= user.name %></h1>
+        <p class="lead">This is your Dashboard</p>
+        <hr class="my-4">
+        <p>
+            <%- include('partials/msg.ejs'); %>
+            Bolt Skills mern stack
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/logout" role="button">Logout</a>
+        </p>
+    </div>
+</div>

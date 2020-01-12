@@ -1,0 +1,33 @@
+<% if(typeof errors !='undefined') {%>
+<% errors.forEach(function(error) {%>
+<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Oh snap!</strong> <a class="alert-link">
+        <%= error.msg %><a>
+</div>
+<%})%>
+<%}%>
+
+<%if(success_alert !=''){%>
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Well done!</strong> <%= success_alert %> <a class="alert-link">you can now login</a>.
+</div>
+<%} %>
+
+<% if(error_alert !='') {%>
+<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Oh snap!</strong> <a class="alert-link">
+        <%= error_alert %><a>
+</div>
+<%}%>
+
+
+<%if(error !=''){%>
+<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Oh snap!</strong> <a class="alert-link">
+        <%= error %><a>
+</div>
+<%}%>
